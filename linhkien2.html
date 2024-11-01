@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khang Audio - Linh Kiện</title>
+    <link rel="icon" href="tieude.jpg" type="image/x-icon">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- FontAwesome for icons -->
+    <link href="./fontawesome-free-6.6.0-web/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="linhkien.css">
+    <script src="linhkien.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">KHANG AUDIO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <!-- Menu chính -->
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="window.location.href='sanpham.html'">Sản Phẩm</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="window.location.href='phukien.html'">Phụ Kiện Audio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="window.location.href='linhkien.html'">Linh Kiện DIY Audio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="window.location.href='Baiviet.html'">Bài Viết</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="window.location.href='gioithieu.html'">Giới Thiệu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="window.location.href='lienhe.html'">Liên Hệ</a></li>
+                </ul>
+                
+                <!-- Thanh tìm kiếm -->
+                <form class="d-flex search-bar">
+                    <input class="form-control" type="search" placeholder="Tìm kiếm">
+                    <button class="btn btn-outline-secondary" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                
+                
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container my-4">
+        <header>
+            <h1 class="text-start">Linh Kiện Audio</h1>
+        </header>
+
+        <!-- Giỏ hàng -->
+        <div id="cart-icon" onclick="toggleCart()" class="text-end">
+            🛒
+        </div>
+        
+        <div id="cart-modal">
+            <div id="cart">
+                <h5>Giỏ hàng của bạn</h5>
+                <ul id="cart-items"></ul>
+                <div id="cart-total">Tổng: 0 đ</div>
+                <div class="d-flex justify-content-between">
+                    <button id="clear-cart" class="btn btn-danger">Xóa giỏ hàng</button>
+                    <button id="checkout-cart" class="btn btn-danger">Mua hàng</button>
+                </div>
+            </div>
+        </div>
+
+      
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="Image/chandinh2.jpg" class="card-img-top" alt="Chân Đinh Chén Hứng 4cm Inox 304 Kệ Audio">
+                    <div class="card-body">
+                        <h5 class="card-title">Chân Đinh Chén Hứng 4cm Inox 304 Kệ Audio</h5>
+                        <p class="card-text">180,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="Image/chanbi.jpg" class="card-img-top" alt="Chân Bi Chống Rung Inox 304 Mẫu Germany">
+                    <div class="card-body">
+                        <h5 class="card-title">Chân Bi Chống Rung Inox 304 Mẫu Germany</h5>
+                        <p class="card-text">350,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="Image/ecc.jpg" class="card-img-top" alt="ECC81 RFT FUNWERK">
+                    <div class="card-body">
+                        <h5 class="card-title">ECC81 RFT FUNWERK</h5>
+                        <p class="card-text">4,100,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="Image/ecc2.jpg" class="card-img-top" alt="1 Đôi Bóng ECC81 RFT">
+                    <div class="card-body">
+                        <h5 class="card-title">1 Đôi Bóng ECC81 RFT</h5>
+                        <p class="card-text">2,450,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="Image/ecc3.jpg" class="card-img-top" alt="1 Đôi bóng đèn ECC83 RSD">
+                    <div class="card-body">
+                        <h5 class="card-title">1 Đôi bóng đèn ECC83 RSD</h5>
+                        <p class="card-text">250,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="Image/vo.webp" class="card-img-top" alt="Vỏ Hộp DIY">
+                    <div class="card-body">
+                        <h5 class="card-title">Vỏ Hộp DIY</h5>
+                        <p class="card-text">460,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="Image/tudien1.jpg" class="card-img-top" alt="Tụ Điện Audio Hàng Nhật - Hãng Nichion">
+                    <div class="card-body">
+                        <h5 class="card-title">Tụ Điện Audio Hàng Nhật - Hãng Nichion</h5>
+                        <p class="card-text">65,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="Image/bieaap1.jpg" class="card-img-top" alt="Biến Áp Nguồn">
+                    <div class="card-body">
+                        <h5 class="card-title">Biến Áp Nguồn</h5>
+                        <p class="card-text">350,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="Image/numden.jpg" class="card-img-top" alt="Núm Volume Pioneer Đen Nhám 50mm">
+                    <div class="card-body">
+                        <h5 class="card-title">Núm Volume Pioneer Đen Nhám 50mm</h5>
+                        <p class="card-text">50,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="Image/numnhom.jpg" class="card-img-top" alt="Núm Volume Pioneer Mạ Nhôm 28mm">
+                    <div class="card-body">
+                        <h5 class="card-title">Núm Volume Pioneer Mạ Nhôm 28mm</h5>
+                        <p class="card-text">50,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="Image/chan9.jpg" class="card-img-top" alt="Chân Đèn Sứ Nga 9 Chân Hàng Quân Sự Tháo Máy">
+                    <div class="card-body">
+                        <h5 class="card-title">Chân Đèn Sứ Nga 9 Chân Hàng Quân Sự Tháo Máy</h5>
+                        <p class="card-text">30,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="Image/chan7.jpg" class="card-img-top" alt="Chân Đèn Sứ Nga 7 Chân Hàng Quân Sự Tháo Máy">
+                    <div class="card-body">
+                        <h5 class="card-title">Chân Đèn Sứ Nga 7 Chân Hàng Quân Sự Tháo Máy</h5>
+                        <p class="card-text">30,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="Image/cocloa.jpg" class="card-img-top" alt="Cọc Loa Pioneer 17mm">
+                    <div class="card-body">
+                        <h5 class="card-title">Cọc Loa Pioneer 17mm</h5>
+                        <p class="card-text">115,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="Image/tro6k.jpg" class="card-img-top" alt="Trở 6kΩ">
+                    <div class="card-body">
+                        <h5 class="card-title">Trở 6kΩ</h5>
+                        <p class="card-text">Liên hệ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="Image/tro4k.jpg" class="card-img-top" alt="Trở 4kΩ">
+                    <div class="card-body">
+                        <h5 class="card-title">Trở 4kΩ</h5>
+                        <p class="card-text">Liên hệ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="Image/chandinh.jpg" class="card-img-top" alt="Chân Đinh Chén Hứng Màu Vàng Đồng">
+                    <div class="card-body">
+                        <h5 class="card-title">Chân Đinh Chén Hứng Màu Vàng Đồng</h5>
+                        <p class="card-text">65,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="Image/inox.jpg" class="card-img-top" alt="Núm Volume Inox 30*25">
+                    <div class="card-body">
+                        <h5 class="card-title">Núm Volume Inox 30*25</h5>
+                        <p class="card-text">130,000</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="Image/tu2000.jpg" class="card-img-top" alt="Tụ 2000 pF 500V">
+                    <div class="card-body">
+                        <h5 class="card-title">Tụ 2000 pF 500V</h5>
+                        <p class="card-text">Liên hệ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="Image/tu1300.jpg" class="card-img-top" alt="Tụ 1300 pF 500V">
+                    <div class="card-body">
+                        <h5 class="card-title">Tụ 1300 pF 500V</h5>
+                        <p class="card-text">80.000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="Image/tu1300.jpg" class="card-img-top" alt="Tụ 1300 pF 500V">
+                    <div class="card-body">
+                        <h5 class="card-title">Tụ 1300 pF 500V</h5>
+                        <p class="card-text">350,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="Image/tu0.25.jpg" class="card-img-top" alt="Tụ Dầu Nga Loại 0.25 Muy 500V">
+                    <div class="card-body">
+                        <h5 class="card-title">Tụ Dầu Nga Loại 0.25 Muy 500V</h5>
+                        <p class="card-text">100,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="Image/tu2.jpg" class="card-img-top" alt="Tụ Dầu Nga Loại 2 Muy 160V">
+                    <div class="card-body">
+                        <h5 class="card-title">Tụ Dầu Nga Loại 2 Muy 160V</h5>
+                        <p class="card-text">35,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="Image/tu4.jpg" class="card-img-top" alt="Tụ Dầu Nga Loại 4 Muy 160v ">
+                    <div class="card-body">
+                        <h5 class="card-title">Tụ Dầu Nga Loại 4 Muy 160v ">
+                            <div class="card-body"></h5>
+                        <p class="card-text">35,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="Image/tu033.jpg" class="card-img-top" alt="Tụ 0,33 Muy 500V">
+                    <div class="card-body">
+                        <h5 class="card-title">Tụ 0,33 Muy 500V</h5>
+                        <p class="card-text">100,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="d-flex justify-content-center mt-4">
+        <nav aria-label="Page navigation">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">Trang Trước</a></li>
+                <li class="page-item"><a class="page-link" href="linhkien.html">1</a></li>
+                <li class="page-item"><a class="page-link" href="linhkien2.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Trang Sau</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <footer class="footer bg-dark text-light pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <!-- Liên Hệ -->
+                <div class="col-md-3">
+                    <h5>LIÊN HỆ</h5>
+                    <p>KHANG AUDIO</p>
+                    <p>Cửa Hàng: 154 Nghi Tàm, Q. Tây Hồ, Hà Nội.</p>
+                    <p>090.600.3355</p>
+                    <p>093.466.2513</p>
+                    <p>098.160.4599</p>
+                    <p>086.209.3086</p>
+                    <p>086.942.1188</p>
+                    <p>info.khangaudio@gmail.com</p>
+                </div>
+    
+                <!-- Chính Sách -->
+                <div class="col-md-3">
+                    <h5>CHÍNH SÁCH</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">TRANG CHỦ</a></li>
+                        <li><a href="#" class="text-light">KÊNH YOUTUBE</a></li>
+                        <li><a href="#" class="text-light">LIÊN HỆ</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Khang-Audio -->
+                <div class="col-md-3">
+                    <h5>KHANG-AUDIO</h5>
+                    <p>Đam mê âm thanh, yêu cái đẹp, và các sản phẩm audio vintage của Đức trong giai đoạn Vàng của Audio đã là những cơ duyên cho Khang-Audio thực hiện các dự án DIY audio làm thùng loa và amply đèn...</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

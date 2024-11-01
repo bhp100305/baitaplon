@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khang Audio - Phụ Kiện</title>
+    <link rel="icon" href="tieude.jpg" type="image/x-icon">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- FontAwesome for icons -->
+    <link href="./fontawesome-free-6.6.0-web/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="phukien.css">
+    <script src="phukien.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">KHANG AUDIO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <!-- Menu chính -->
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="window.location.href='sanpham.html'">Sản Phẩm</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="window.location.href='phukien.html'">Phụ Kiện Audio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="window.location.href='linhkien.html'">Linh Kiện DIY Audio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="window.location.href='Baiviet.html'">Bài Viết</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="window.location.href='gioithieu.html'">Giới Thiệu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="window.location.href='lienhe.html'">Liên Hệ</a></li>
+                </ul>
+                
+                <!-- Thanh tìm kiếm -->
+                <form class="d-flex search-bar">
+                    <input class="form-control" type="search" placeholder="Tìm kiếm">
+                    <button class="btn btn-outline-secondary" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                
+                
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container my-4">
+        <header>
+            <h1>Phụ Kiện AUDIO</h1>
+        </header>
+
+        <!-- Giỏ hàng -->
+        <div id="cart-icon" onclick="toggleCart()" class="text-end">
+            Giỏ Hàng 🛒
+        </div>
+        
+        <div id="cart-modal">
+            <div id="cart">
+                <h5>Giỏ hàng của bạn</h5>
+                <ul id="cart-items"></ul>
+                <div id="cart-total">Tổng: 0 đ</div>
+                <div class="d-flex justify-content-between">
+                    <button id="clear-cart" class="btn btn-danger">Xóa giỏ hàng</button>
+                    <button id="checkout-cart" class="btn btn-danger">Mua hàng</button>
+                </div>
+            </div>
+        </div>
+
+      
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="images/loa5.3.jpg" class="card-img-top" alt="USAMS Loa Bluetooth 5.3">
+                    <div class="card-body">
+                        <h5 class="card-title">USAMS Loa Bluetooth 5.3</h5>
+                        <p class="card-text">300,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="images/loa2.jpg" class="card-img-top" alt="Loa Bluetooth hoco 100">
+                    <div class="card-body">
+                        <h5 class="card-title">Loa Bluetooth hoco 100</h5>
+                        <p class="card-text">300,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="images/may1.jpg" class="card-img-top" alt="Máy nghe nhạc Havit pro 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Máy nghe nhạc Havit pro 6</h5>
+                        <p class="card-text">750,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="images/tainghe3.jpg" class="card-img-top" alt="Tai nghe Bluetooth myalo z one">
+                    <div class="card-body">
+                        <h5 class="card-title">Tai nghe Bluetooth myalo z one</h5>
+                        <p class="card-text">250,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="images/tainghe4.jpg" class="card-img-top" alt="Tai nghe Vander 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Tai nghe Vander 4</h5>
+                        <p class="card-text">400,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="images/loa3.jpg" class="card-img-top" alt="Loa Bluetooth one">
+                    <div class="card-body">
+                        <h5 class="card-title">Loa Bluetooth one</h5>
+                        <p class="card-text">1,000,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="images/tainghevander.jpg" class="card-img-top" alt="Tai Nghe Tiger 4 pro">
+                    <div class="card-body">
+                        <h5 class="card-title">Tai Nghe Tiger 4 pro</h5>
+                        <p class="card-text">550,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="images/chaydia1.jpg" class="card-img-top" alt="Máy chạy đĩa CD acer 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Máy chạy đĩa CD acer 3</h5>
+                        <p class="card-text">1,050,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="images/chaydia2.jpg" class="card-img-top" alt="Máy chạy đĩa CD acer 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Máy chạy đĩa CD acer 4</h5>
+                        <p class="card-text">950,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="images/may4.jpg" class="card-img-top" alt="Máy chạy đĩa than cổ điển">
+                    <div class="card-body">
+                        <h5 class="card-title">Máy chạy đĩa than cổ điển</h5>
+                        <p class="card-text">3,000,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="images/diathan1.jpg" class="card-img-top" alt="Máy chạy đĩa than">
+                    <div class="card-body">
+                        <h5 class="card-title">Máy chạy đĩa than</h5>
+                        <p class="card-text">5,000,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="images/loato1.jpg" class="card-img-top" alt="Loa Audio 110">
+                    <div class="card-body">
+                        <h5 class="card-title">Loa Audio 110</h5>
+                        <p class="card-text">2,000,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="images/chaydia3.jpg" class="card-img-top" alt="Đầu đọc CD Fado 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Đầu đọc CD Fado 4</h5>
+                        <p class="card-text">3,500,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="images/loa6.jpg" class="card-img-top" alt="Loa Monitor 1000">
+                    <div class="card-body">
+                        <h5 class="card-title">Loa Monitor 1000</h5>
+                        <p class="card-text">7,500,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="images/cap2.jpg" class="card-img-top" alt="Đầu đọc CD Fado 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Dây cáp AH 4</h5>
+                        <p class="card-text">500,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="images/cap3.jpg" class="card-img-top" alt="Dây cáp DS4">
+                    <div class="card-body">
+                        <h5 class="card-title">Dây cáp DS4</h5>
+                        <p class="card-text">300,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="images/cap4.jpg" class="card-img-top" alt="Cáp tách 2 đầu 3.5mm">
+                    <div class="card-body">
+                        <h5 class="card-title">Cáp tách 2 đầu 3.5mm</h5>
+                        <p class="card-text">200,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="images/cap5.jpg" class="card-img-top" alt="Dây Nguồn loa audio">
+                    <div class="card-body">
+                        <h5 class="card-title">Dây Nguồn loa audio</h5>
+                        <p class="card-text">300,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="images/loamini.jpg" class="card-img-top" alt="Loa Mini M3">
+                    <div class="card-body">
+                        <h5 class="card-title">Loa Mini M3</h5>
+                        <p class="card-text">700,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="images/mic1.jpg" class="card-img-top" alt="Đôi micro EXO chính hãng">
+                    <div class="card-body">
+                        <h5 class="card-title">Đôi micro EXO chính hãng</h5>
+                        <p class="card-text">800,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="images/airpod1.jpg" class="card-img-top" alt="Airpod pro">
+                    <div class="card-body">
+                        <h5 class="card-title">Airpod pro</h5>
+                        <p class="card-text">1,200,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="images/tainghe8.jpg" class="card-img-top" alt="Tai Nghe Bluetooth tai thỏ">
+                    <div class="card-body">
+                        <h5 class="card-title">Tai Nghe Bluetooth tai thỏ</h5>
+                        <p class="card-text">700,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="images/daycap1.jpg" class="card-img-top" alt="Dây cap Vietion ">
+                    <div class="card-body">
+                        <h5 class="card-title">Dây cap Vietion ">
+                            <div class="card-body"></h5>
+                        <p class="card-text">150,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="images/tainghe6.jpg" class="card-img-top" alt="Tai nghe Tiger 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Tai nghe Tiger 4</h5>
+                        <p class="card-text">400,000 đ</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer class="footer bg-dark text-light pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <!-- Liên Hệ -->
+                <div class="col-md-3">
+                    <h5>LIÊN HỆ</h5>
+                    <p>KHANG AUDIO</p>
+                    <p>Cửa Hàng: 154 Nghi Tàm, Q. Tây Hồ, Hà Nội.</p>
+                    <p>090.600.3355</p>
+                    <p>093.466.2513</p>
+                    <p>098.160.4599</p>
+                    <p>086.209.3086</p>
+                    <p>086.942.1188</p>
+                    <p>info.khangaudio@gmail.com</p>
+                </div>
+    
+                <!-- Chính Sách -->
+                <div class="col-md-3">
+                    <h5>CHÍNH SÁCH</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">TRANG CHỦ</a></li>
+                        <li><a href="#" class="text-light">KÊNH YOUTUBE</a></li>
+                        <li><a href="#" class="text-light">LIÊN HỆ</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Khang-Audio -->
+                <div class="col-md-3">
+                    <h5>KHANG-AUDIO</h5>
+                    <p>Đam mê âm thanh, yêu cái đẹp, và các sản phẩm audio vintage của Đức trong giai đoạn Vàng của Audio đã là những cơ duyên cho Khang-Audio thực hiện các dự án DIY audio làm thùng loa và amply đèn...</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,233 @@
+/* Cài đặt chung */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0px 150px 30px 150px;
+}
+
+/* Header */
+header {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 30px 0 0 150px;
+    text-align: left;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #f8f9fa;
+    margin-bottom: 30px;
+}
+
+.nav-link {
+    font-size: 1em;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.nav-item {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Danh mục */
+.categories {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+ul {
+    padding: 30px;
+}
+
+li {
+    display: inline-block;
+    list-style-type: none;
+    align-items: center;
+}
+
+ul li a {
+    text-align: center;
+    text-decoration: none;
+    padding: 30px;
+    margin: 10px;
+    color: #000000;
+    cursor: pointer;
+}
+
+li a:hover {
+    color: #e70000;
+}
+
+/* Liên Hệ */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    flex-direction: column;
+    border-radius: 10px; /* Bo tròn các góc */
+    
+}
+
+.hotline, .address, .contact-form {
+    margin-bottom: 20px; /* Khoảng cách giữa các phần */
+    padding: 15px;
+    background-color: #ffffff; /* Màu nền trắng */
+    border-radius: 5px; /* Bo tròn góc */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+}
+
+h1, h2, h3 {
+    color: #333; /* Màu chữ cho tiêu đề */
+}
+
+h1 {
+    text-align: center; /* Căn giữa tiêu đề chính */
+    margin-bottom: 30px; /* Khoảng cách dưới tiêu đề */
+}
+
+a {
+    color: #007bff; /* Màu link */
+    text-decoration: none; /* Không gạch chân */
+}
+
+/* Form */
+.contact-form input, .contact-form textarea {
+    width: calc(100% - 20px); /* Độ rộng của các trường nhập */
+    padding: 10px; /* Padding cho các trường nhập */
+    margin-bottom: 15px; /* Khoảng cách dưới các trường nhập */
+    border: 1px solid #ccc; /* Viền cho các trường nhập */
+    border-radius: 4px; /* Bo tròn góc */
+    font-size: 1em; /* Kích thước chữ */
+}
+
+.contact-form button {
+    background-color: #007bff; /* Màu nền cho nút */
+    color: #ffffff; /* Màu chữ cho nút */
+    padding: 10px 20px; /* Padding cho nút */
+    border: none; /* Không có viền */
+    border-radius: 4px; /* Bo tròn góc */
+    cursor: pointer; /* Hiệu ứng con trỏ khi hover */
+    font-size: 1em; /* Kích thước chữ */
+}
+
+.contact-form button:hover {
+    background-color: #0056b3; /* Màu nền khi hover */
+}
+
+/* Footer */
+.footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer h5 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .list-unstyled {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.footer .container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Thêm dòng này để căn giữa các cột */
+    gap: 30px; /* Thêm khoảng cách giữa các cột */
+}
+
+.footer .col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 0 15px;
+}
+
+@media (max-width: 768px) {
+    .footer .col-md-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 20px; /* Thêm khoảng cách giữa các cột khi màn hình nhỏ */
+    }
+}
+
+    /* Responsive product grid */
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.product-item {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.product-item img {
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.product-item p {
+    font-weight: bold;
+    margin: 10px 0;
+    color: #000000;
+}
+
+.product-item span {
+    color: #888;
+    font-size: 14px;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}

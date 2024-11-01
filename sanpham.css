@@ -1,0 +1,253 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    margin: 0px 150px 30px 150px;
+}
+* {
+    box-sizing: border-box;
+}
+/* Header */
+header {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 30px 0 0 150px;
+    text-align: left;
+    padding-bottom: 20px;
+}
+h4{
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+/* Navbar */
+.navbar {
+    background-color: #f8f9fa;
+    margin-bottom: 30px;
+}
+
+.nav-link {
+    font-size: 1em;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.nav-item {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Form */
+.form-control {
+    width: 200px;
+}
+
+.btn-outline-secondary i {
+    color: #333;
+}
+
+/* Danh mục */
+.categories {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+ul {
+    padding: 30px;
+}
+
+li {
+    display: inline-block;
+    list-style-type: none;
+    align-items: center;
+}
+
+ul li a {
+    text-align: center;
+    text-decoration: none;
+    padding: 30px;
+    margin: 10px;
+    color: #000000;
+    cursor: pointer;
+}
+
+li a:hover {
+    color: #e70000;
+}
+
+/* Footer */
+.footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer h5 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .list-unstyled {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.footer .container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Thêm dòng này để căn giữa các cột */
+    gap: 30px; /* Thêm khoảng cách giữa các cột */
+}
+
+.footer .col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 0 15px;
+}
+
+@media (max-width: 768px) {
+    .footer .col-md-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 20px; /* Thêm khoảng cách giữa các cột khi màn hình nhỏ */
+    }
+}
+
+/* Container */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+    flex-direction: column;
+}
+
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+.header-container h1 {
+    font-size: 24px;
+    margin: 0;
+}
+.header-container span {
+    font-size: 16px;
+    color: #333;
+}
+.product-card img {
+    object-fit: cover;
+    height: 200px;
+}
+.product-card h5 {
+    font-size: 16px;
+    font-weight: bold;
+}
+.product-card p {
+    font-size: 14px;
+    color: #555;
+}
+.product-card {
+    position: relative;
+    overflow: hidden;
+}
+.product-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.product-card:hover .product-overlay {
+    opacity: 1;
+}
+.product-overlay .btn {
+    margin: 5px;
+    color: #fff;
+}
+/* css giỏ hàng */
+/* Biểu tượng giỏ hàng ở góc phải */
+#cart-icon {
+    position:absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    z-index: 1000; /* Đặt z-index cao để biểu tượng hiển thị trên các phần tử khác */
+}
+
+#cart-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Modal hiển thị giỏ hàng */
+#cart-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 280px;
+    height: 100%;
+    background: white;
+    display: none; /* Ban đầu ẩn */
+    flex-direction: column;
+    padding: 20px;
+    z-index: 999;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#cart {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khang Audio - Trang Chủ</title>
+    <link rel="icon" href="tieude.jpg" type="image/x-icon">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- FontAwesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="home.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">KHANG AUDIO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <!-- Menu chính -->
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="sanpham.html">Sản Phẩm</a></li>
+                    <li class="nav-item"><a class="nav-link" href="phukien.html">Phụ Kiện Audio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="linhkien.html">Linh Kiện DIY Audio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Baiviet.html">Bài Viết</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gioithieu.html">Giới Thiệu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lienhe.html">Liên Hệ</a></li>
+                </ul>
+                
+                <!-- Thanh tìm kiếm -->
+                <form class="d-flex search-bar">
+                    <input class="form-control" type="search" placeholder="Tìm kiếm">
+                    <button class="btn btn-outline-secondary" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <div id="cart-icon" onclick="toggleCart()">
+                    Giỏ Hàng 🛒
+               </div>
+               
+               <div id="cart-modal">
+                   <div id="cart">
+                       <h5>Giỏ hàng của bạn</h5>
+                       <ul id="cart-items"></ul>
+                       <div id="cart-total">Tổng: 0 đ</div>
+                       <button id="clear-cart">Xóa giỏ hàng</button>
+                   </div>
+               </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Slideshow -->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="1.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="2.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="3.jpg" style="width:100%">
+        </div>
+        <!-- Nút điều khiển -->
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+
+    <h1>SẢN PHẨM ĐƯỢC ƯA CHUỘNG</h1>
+    <div class="row">
+        <div class="col-md-4 mb-4" data-product="1">
+            <div class="card product-card">
+                <img src="/imgs/Dia_nhac/dia1.jpg" class="card-img-top" alt="Product 1">
+                <div class="card-body">
+                    <h5 class="card-title">Tình Khúc Trần Thiện Thanh - ASIA Trúc Hồ</h5>
+                    <p class="card-text">150,000 đ</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4" data-product="2">
+            <div class="card product-card">
+                <img src="/imgs/Dia_nhac/dia2.jpg" class="card-img-top" alt="Product 2">
+                <div class="card-body">
+                    <h5 class="card-title">Tình Khúc Trúc Phương - ASIA Trúc Hồ</h5>
+                    <p class="card-text">150,000 đ</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4" data-product="3">
+            <div class="card product-card">
+                <img src="/imgs/Dia_nhac/dia3.jpg" class="card-img-top" alt="Product 3">
+                <div class="card-body">
+                    <h5 class="card-title">14 Tình Khúc Ngô Thụy Miên - ASIA Trúc Hồ</h5>
+                    <p class="card-text">150,000 đ</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4" data-product="4">
+            <div class="card product-card">
+                <img src="/imgs/Dia_nhac/dia4.jpg" class="card-img-top" alt="Product 4">
+                <div class="card-body">
+                    <h5 class="card-title">Tình Khúc Lam Phương - ASIA Trúc Hồ</h5>
+                    <p class="card-text">150,000 đ</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4" data-product="9">
+            <div class="card product-card">
+                <img src="/imgs/Dia_nhac/dia9.jpg" class="card-img-top" alt="Product 9">
+                <div class="card-body">
+                    <h5 class="card-title">16 Ca Khúc Hay Nhất Jimmy Nguyễn</h5>
+                    <p class="card-text">150,000 đ</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4" data-product="10">
+            <div class="card product-card">
+                <img src="/imgs/Dia_nhac/dia10.jpg" class="card-img-top" alt="Product 10">
+                <div class="card-body">
+                    <h5 class="card-title">Giọt Nắng Bên Thềm - Thanh Tùng</h5>
+                    <p class="card-text">150,000 đ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <h1>Tin Tức Mới</h1>
+    <article>
+        <div class="container1">
+            <div class="main-content">
+                <div class="divider"></div>
+                <div class="article">
+                    <a href="https://khang-audio.com/chitiet/kl-l405---bi-mat-dang-sau-am-thanh-vang-son-va-su-lua-chon-cua-cac-audiophile-438.html" target="_blank"><img src="./BaiViet/BaiViet1.jpg" alt="KL L405"></a>
+                    <div>
+                        <a href="https://khang-audio.com/chitiet/kl-l405---bi-mat-dang-sau-am-thanh-vang-son-va-su-lua-chon-cua-cac-audiophile-438.html" target="_blank"><h3>KL L405 - Bí mật đằng sau âm thanh vàng son và sự lựa chọn của các audiophile</h3></a>
+                        <p>Siemens Klangfilm KL L405 - một huyền thoại âm thanh đã đi vào lịch sử. Với nón giấy siêu nhẹ và nam châm Alnico mạnh mẽ, củ loa này đã chinh phục trái tim của những người yêu âm thanh trên toàn thế giới. Cùng khám phá những bí mật đằng sau âm thanh tuyệt vời của KL L405 và lý do tại sao nó trở thàn...</p>
+                    </div>
+                </div>
+                <div class="article">
+                    <a href="https://khang-audio.com/chitiet/l3060pb---kiet-tac-am-thanh-voi-nam-cham-alnico-huyen-thoai-tu-dong-duc-437.html" target="_blank"><img src="./BaiViet/BaiViet2.jpg" alt="L3060PB"></a> 
+                    <div>
+                        <a href="https://khang-audio.com/chitiet/l3060pb---kiet-tac-am-thanh-voi-nam-cham-alnico-huyen-thoai-tu-dong-duc-437.html" target="_blank"><h3>L3060PB - Kiệt Tác Âm Thanh Với Nam Châm Alnico Huyền Thoại Từ Đông Đức</h3></a>
+                        <p>L3060PB được biết đến rộng rãi với vai trò là loa chính trong hệ thống chiếu phim Klangfilm nổi tiếng của Carl Zeiss Jena. Những chiếc loa này đã đồng hành cùng hàng triệu khán giả qua những thước phim kinh điển tại các rạp chiếu phim khắp châu Âu. Với thiết kế bền bỉ và chất lượng âm thanh vượt trộ...</p>
+                    </div>
+                </div>
+                <div class="article">
+                    <a href="https://khang-audio.com/chitiet/ksp215k---huyen-thoai-am-thanh-tu-dong-duc-436.html" target="_blank"> <img src="./BaiViet/BaiViet3.jpg" alt="KSP215K"></a>
+                    <div>
+                        <a href="https://khang-audio.com/chitiet/ksp215k---huyen-thoai-am-thanh-tu-dong-duc-436.html" target="_blank"><h3>KSP215K - Huyền Thoại Âm Thanh Từ Đông Đức</h3></a>
+                        <p>Bạn có từng mơ ước sở hữu một chiếc loa mang âm thanh trong trẻo, chi tiết đến kinh ngạc, như thể đang được hòa mình vào không gian âm nhạc sống động? Nếu vậy, củ loa KSP215K chính là điều bạn đang tìm kiếm. Sinh ra từ đất nước Đông Đức, KSP215K không chỉ đơn thuần là một thiết bị âm thanh, mà còn l...</p>
+                    </div>
+                </div>
+                <div class="article">
+                    <a href="https://khang-audio.com/chitiet/ripple-and-noise-la-gi-va-anh-huong-the-nao-den-thiet-bi-435.html" target="_blank"><img src="./BaiViet/BaiViet4.jpg" alt="Ripple"></a>
+                    <div>
+                        <a href="https://khang-audio.com/chitiet/ripple-and-noise-la-gi-va-anh-huong-the-nao-den-thiet-bi-435.html" target="_blank"><h3>Ripple and Noise là gì và ảnh hưởng thế nào đến thiết bị</h3></a>
+                        <p>Bộ chuyển đổi nguồn, hay củ sạc, mà chúng ta chúng ta thường dùng cho laptop, điện thoại, hay các thiết bị điện tử, sẽ có chức năng chính là chuyển đổi dòng điện xoay chiều AC 100V, 240V sang điện một chiều DC 5V, 9V, 12V… để đáp ứng được điện áp cho thiết bị. Tuy nhiên, trong quá trình chuyển đổi t...</p>
+                    </div>
+                </div>
+                <div class="article">
+                    <a href="https://khang-audio.com/chitiet/bien-ap-cach-ly-khang-audio-15kva-khuc-ca-du-duong-cho-tam-hon-yeu-nhac-434.html" target="_blank"> <img src="./BaiViet/BaiViet5.jpg" alt="Biến áp"></a>
+                    <div>
+                        <a href="https://khang-audio.com/chitiet/bien-ap-cach-ly-khang-audio-15kva-khuc-ca-du-duong-cho-tam-hon-yeu-nhac-434.html" target="_blank"><h3>Biến Áp Cách Ly Khang Audio 1.5kVA: Khúc ca du dương cho tâm hồn yêu nhạc</h3></a>
+                        <p>Biến Áp Cách Ly Khang Audio 1.5kVA không chỉ mang đến âm thanh hoàn hảo mà còn bảo vệ hệ thống âm thanh của bạn an toàn. Nhờ công suất 1.5kVA phù hợp, lõi biến áp hình xuyến hiệu suất cao, cùng hệ thống lọc điện tiên tiến, biến áp Khang Audio 1.5kVA đảm bảo nguồn điện sạch, ổn định, giúp hệ thống ho...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>LIÊN HỆ</h5>
+                    <p>KHANG AUDIO</p>
+                    <p>Cửa Hàng: 154 Nghi Tàm, Q. Tây Hồ, Hà Nội.</p>
+                    <p>090.600.3355</p>
+                    <p>093.466.2513</p>
+                    <p>098.160.4599</p>
+                    <p>086.209.3086</p>
+                    <p>086.942.1188</p>
+                    <p>info.khangaudio@gmail.com</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>CHÍNH SÁCH</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">TRANG CHỦ</a></li>
+                        <li><a href="#" class="text-light">KÊNH YOUTUBE</a></li>
+                        <li><a href="#" class="text-light">LIÊN HỆ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>KHANG-AUDIO</h5>
+                    <p>Đam mê âm thanh, yêu cái đẹp, và các sản phẩm audio vintage...</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!-- Slideshow JS -->
+    <script src="home.js"></script>
+</body>
+</html>
